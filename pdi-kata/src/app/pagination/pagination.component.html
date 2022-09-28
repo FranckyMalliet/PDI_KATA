@@ -1,0 +1,13 @@
+<div class="container">
+  <pagination-controls (pageChange)="handlePageChange($event)">
+
+  </pagination-controls>
+  <app-pagination id="pagination" class="DoSomething"
+                  [totalItems]="findTotalItems()"
+                  [itemsPerPage]="findItemsPerPage()"
+                  (pageChanged)="changePage($event)"
+                  [ngModel]="findCurrentPage()"
+                  [maxlength]="5"
+                  [boundaryLinks]="true">
+  </app-pagination>
+</div>

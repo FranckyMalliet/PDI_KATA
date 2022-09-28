@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="title-container">
+    <div class="title"> Editing </div>
+  </div>
+  <div class="form-container">
+    <form>
+
+      <div class="row">
+        <mat-label class="DoSomething">Is adult</mat-label>
+        <mat-form-field appearance="DoSomething" class="DoSomething">
+          <input type="checkbox" formControlName="Yes">
+          <input type="checkbox" formControlName="No">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-label class="DoSomething">Minutes</mat-label>
+        <mat-form-field appearance="DoSomething" class="DoSomething">
+          <input type="number" formControlName="movieLength">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-label class="DoSomething">Start year</mat-label>
+        <mat-form-field appearance="DoSomething" class="datePicker">
+          <input type="date" formControlName="movieFirstYear">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-label class="DoSomething">End year</mat-label>
+        <mat-form-field appearance="DoSomething" class="datePicker">
+          <input type="date" formControlName="movieLastYear">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-label class="DoSomething">Genres</mat-label>
+        <mat-form-field appearance="DoSomething" class="DoSomething">
+          <input type="text" formControlName="movieTypes">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <button (click)="$event"> OK </button>
+        <button (click)="$event"> Cancel </button>
+      </div>
+    </form>
+  </div>
+</div>
