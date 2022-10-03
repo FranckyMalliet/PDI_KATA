@@ -55,7 +55,8 @@ export class MovieService {
   }
 
   public findMovieById(id: string): Movie {
-    let movie = new Movie();
+    let movie = new Movie("", "", "", "", "",
+      "","","","");
 
     this.movies.forEach(result => {
       if (result.id === id) {
