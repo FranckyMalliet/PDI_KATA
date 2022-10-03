@@ -1,0 +1,71 @@
+.detail_title {
+  background: #F3F3F3;
+  font-family: Roboto, serif;
+  font-weight: lighter;
+  font-size: 10px;
+  text-align: center;
+}
+
+.detail {
+  font-family: Roboto, serif;
+  font-weight: lighter;
+  font-size: 11px;
+}
+
+.display_movie_container {
+  display: inline-block;
+  width: 400px;
+  height: 125px;
+  margin: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 11px #E8E5E5;
+}
+
+.movie_first_block {
+display: block;
+  margin: auto;
+}
+
+.movie_first_grid {
+  display: grid;
+  grid-template-columns: 275px 125px;
+}
+
+.movie_information {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-gap: 5px;
+
+  text-align: center;
+}
+
+.original_title {
+  font-family: Roboto, serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.primary_title {
+  font-family: Roboto, serif;
+  font-size: 18px;
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+  background: #F3F3F3;
+  width: 125px;
+  height: 125px;
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+img {
+  width: 100px;
+  height: 125px;
+}

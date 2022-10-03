@@ -1,0 +1,34 @@
+{
+  "MOVIE_INFO": {
+    "END_YEAR": "End year",
+    "IS_ADULT": {
+      "NO": "No",
+      "YES": "Yes"
+    },
+    "MOVIE_TYPES": "Genres",
+    "START_YEAR": "Start year",
+    "TIME": "Minutes",
+    "TYPES": {
+      "ACTION": "Action",
+      "ADVENTURE": "Adventure",
+      "ANIMATION": "Animation",
+      "BIOGRAPHY": "Biography",
+      "COMEDY": "Comedy",
+      "CRIME": "Crime",
+      "DOCUMENTARY": "Documentary",
+      "DRAMA": "Drama",
+      "FAMILY": "Family",
+      "FANTASY": "Fantasy",
+      "HORROR": "Horror",
+      "HISTORY": "History",
+      "MUSIC": "Music",
+      "MYSTERY": "Mystery",
+      "NEWS": "News",
+      "ROMANCE": "Romance",
+      "SCI_FI": "Sci-fi",
+      "SHORT": "Short",
+      "WAR": "War",
+      "WESTERN": "Western"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.header_container {
+  height: 50px;
+  background: linear-gradient(#494848, #000000);
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 3;
+  justify-content: space-between;
+}
+
+.header_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.langage-icons {
+
+}

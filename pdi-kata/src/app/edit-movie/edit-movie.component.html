@@ -1,50 +1,50 @@
-<div class="container">
-  <div class="title-container">
-    <div class="title"> Editing </div>
+<h1 mat-dialog-title>Editing</h1>
+<form [formGroup]="findEditMovieForm()">
+
+  <input type="hidden" value="">
+
+  <div>
+    <mat-label>Is adult</mat-label>
+    <mat-form-field>
+      <mat-checkbox formControlName="Yes" value="Yes">Yes</mat-checkbox>
+      <mat-checkbox formControlName="No" value="No">No</mat-checkbox>
+    </mat-form-field>
   </div>
-  <div class="form-container">
-    <form>
 
-      <div class="row">
-        <mat-label class="DoSomething">Is adult</mat-label>
-        <mat-form-field appearance="DoSomething" class="DoSomething">
-          <input type="checkbox" formControlName="Yes">
-          <input type="checkbox" formControlName="No">
-        </mat-form-field>
-      </div>
-
-      <div class="row">
-        <mat-label class="DoSomething">Minutes</mat-label>
-        <mat-form-field appearance="DoSomething" class="DoSomething">
-          <input type="number" formControlName="movieLength">
-        </mat-form-field>
-      </div>
-
-      <div class="row">
-        <mat-label class="DoSomething">Start year</mat-label>
-        <mat-form-field appearance="DoSomething" class="datePicker">
-          <input type="date" formControlName="movieFirstYear">
-        </mat-form-field>
-      </div>
-
-      <div class="row">
-        <mat-label class="DoSomething">End year</mat-label>
-        <mat-form-field appearance="DoSomething" class="datePicker">
-          <input type="date" formControlName="movieLastYear">
-        </mat-form-field>
-      </div>
-
-      <div class="row">
-        <mat-label class="DoSomething">Genres</mat-label>
-        <mat-form-field appearance="DoSomething" class="DoSomething">
-          <input type="text" formControlName="movieTypes">
-        </mat-form-field>
-      </div>
-
-      <div class="row">
-        <button (click)="$event"> OK </button>
-        <button (click)="$event"> Cancel </button>
-      </div>
-    </form>
+  <div class="form_details">
+    <mat-label>Minutes
+    <mat-form-field>
+      <input matInput type="number" formControlName="length">
+    </mat-form-field>
+    </mat-label>
   </div>
-</div>
+
+  <div>
+    <mat-label>Start year</mat-label>
+    <mat-form-field>
+      <input matInput type="date" formControlName="startYear">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-label>End year</mat-label>
+    <mat-form-field>
+      <input matInput type="date" formControlName="endYear">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-label>Genres</mat-label>
+    <mat-form-field>
+      <input matInput type="text" formControlName="genres">
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-button [mat-dialog-close] cdkFocusInitial>OK</button>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+  </div>
+</form>
+
+
+

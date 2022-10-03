@@ -1,0 +1,40 @@
+{
+  "TEST" : "Change vieille merde",
+
+
+
+  "MOVIE_INFO": {
+    "END_YEAR": "Année de fin",
+    "IS_ADULT": {
+      "NO": "Non",
+      "YES": "Oui"
+    },
+    "MOVIE_TYPES": "Genres",
+    "START_YEAR": "Année de départ",
+    "TIME": "Minutes",
+    "TYPES": {
+      "ACTION": "Action",
+      "ADVENTURE": "Aventure",
+      "ANIMATION": "Animation",
+      "BIOGRAPHY": "Biopic",
+      "COMEDY": "Comédie",
+      "CRIME": "Thriller",
+      "DOCUMENTARY": "Documentaire",
+      "DRAMA": "Drame",
+      "FAMILY": "Familiale",
+      "FANTASY": "Fantasy",
+      "HORROR": "Horreur",
+      "HISTORY": "Historique",
+      "MUSIC": "Musical",
+      "MYSTERY": "Mystérieux",
+      "NEWS": "Informations",
+      "ROMANCE": "Romantique",
+      "SCI_FI": "Science fiction",
+      "SHORT": "Court métrage",
+      "WAR": "Guerre",
+      "WESTERN": "Western"
+    }
+  }
+
+
+}

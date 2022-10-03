@@ -11,7 +11,7 @@ export class PaginationService {
 
   constructor() { }
 
-  public findCurrentNumber(): number {
+  public findCurrentPage(): number {
     return this.currentPage;
   }
 

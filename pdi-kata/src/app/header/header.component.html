@@ -1,0 +1,14 @@
+<div class="header_container">
+  <div class="header_grid">
+    <div>
+      <img src="assets/icons/logo.svg" alt="IMDB">
+    </div>
+
+    <p>{{ 'TEST' | translate }}</p>
+
+    <div>
+      <input type="image" src="assets/icons/flag_fr.svg" alt="French" (change)="changeDisplayLanguage('fr')">
+      <input type="image" src="assets/icons/flag_usa.svg" alt="English" (change)="changeDisplayLanguage('en')">
+    </div>
+  </div>
+</div>

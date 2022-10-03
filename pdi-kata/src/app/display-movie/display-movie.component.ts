@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {MovieService} from "../services/movie.service";
+import {TranslateService} from "@ngx-translate/core";
+import {MatDialog} from "@angular/material/dialog";
+import {EditMovieComponent} from "../edit-movie/edit-movie.component";
 
 @Component({
   selector: 'app-display-movie',
@@ -7,9 +11,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayMovieComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(public dialog: MatDialog, private movieService: MovieService, private translateService: TranslateService) {
+    translateService.addLangs(['en','fr']);
+    translateService.setDefaultLang('fr')
   }
 
+  ngOnInit(): void {
+    this.movieService.initializeMovieList();
+  }
+
+  public findMoviesData() {
+    return this.movieService.findMovieList();
+  }
+
+  public openDialog(): void {
+    const dialogRef = this.dialog.open(EditMovieComponent, {
+      width: '500px', data: {}
+    })
+
+    // dialogRef.afterClosed().subscribe();
+  }
 }
