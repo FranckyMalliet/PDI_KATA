@@ -1,49 +1,39 @@
 <h1 mat-dialog-title>Editing</h1>
-<form [formGroup]="findEditMovieForm()">
+<form class="form_group" [formGroup]="findEditMovieForm()">
 
   <input type="hidden" value="">
 
-  <div>
-    <mat-label>Is adult</mat-label>
-    <mat-form-field>
-      <mat-checkbox formControlName="Yes" value="Yes">Yes</mat-checkbox>
-      <mat-checkbox formControlName="No" value="No">No</mat-checkbox>
-    </mat-form-field>
-  </div>
+    <div>
+      <mat-label>Is adult</mat-label>
+      <mat-checkbox formControlName="isAdult" value="Yes">Yes</mat-checkbox>
+      <mat-checkbox formControlName="isAdult" value="No">No</mat-checkbox>
+    </div>
 
-  <div class="form_details">
-    <mat-label>Minutes
-    <mat-form-field>
-      <input matInput type="number" formControlName="length">
-    </mat-form-field>
-    </mat-label>
-  </div>
+    <div class="form_details">
+      <mat-label>Minutes
+          <input matInput type="text" formControlName="length">
+      </mat-label>
+    </div>
 
-  <div>
-    <mat-label>Start year</mat-label>
-    <mat-form-field>
-      <input matInput type="date" formControlName="startYear">
-    </mat-form-field>
-  </div>
+    <div>
+      <mat-label>Start year</mat-label>
+        <input matInput type="text" formControlName="startYear">
+    </div>
 
-  <div>
-    <mat-label>End year</mat-label>
-    <mat-form-field>
-      <input matInput type="date" formControlName="endYear">
-    </mat-form-field>
-  </div>
+    <div>
+      <mat-label>End year</mat-label>
+        <input matInput type="text" formControlName="endYear">
+    </div>
 
-  <div>
-    <mat-label>Genres</mat-label>
-    <mat-form-field>
-      <input matInput type="text" formControlName="genres">
-    </mat-form-field>
-  </div>
+    <div>
+      <mat-label>Genres</mat-label>
+        <input matInput type="text" formControlName="genres">
+    </div>
 
-  <div mat-dialog-actions>
-    <button mat-button [mat-dialog-close] cdkFocusInitial>OK</button>
-    <button mat-button (click)="onNoClick()">Cancel</button>
-  </div>
+    <div mat-dialog-actions>
+      <button mat-button [mat-dialog-close] cdkFocusInitial>OK</button>
+      <button mat-button (click)="onNoClick()">Cancel</button>
+    </div>
 </form>
 
 

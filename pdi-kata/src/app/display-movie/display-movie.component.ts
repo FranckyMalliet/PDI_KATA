@@ -26,7 +26,7 @@ export class DisplayMovieComponent implements OnInit {
 
   public openDialog(): void {
     const dialogRef = this.dialog.open(EditMovieComponent, {
-      width: '500px', data: {}
+      width: '400px', data: {}
     })
 
     // dialogRef.afterClosed().subscribe();
